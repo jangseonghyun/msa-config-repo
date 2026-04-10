@@ -3,6 +3,7 @@ spring:
     url: jdbc:postgresql://127.0.0.1:5432/auth_postgres
     username: tmd2052
     password: tmdgus2052
+    driver-class-name: org.postgresql.Driver
 
   kafka:
     bootstrap-servers: localhost:29092
