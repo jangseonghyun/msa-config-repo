@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/auth_postgres
+    url: jdbc:postgresql://127.0.0.1:5435/ai_postgres
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 

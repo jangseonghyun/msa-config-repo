@@ -1,9 +1,9 @@
 server:
-  port: 8082
+  port: 8081
 
 spring:
   application:
-    name: log-service
+    name: doc-service
 
   jpa:
     hibernate:
@@ -12,20 +12,15 @@ spring:
 
   kafka:
     consumer:
-      group-id: log-group
-      auto-offset-reset: earliest
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.value.default.type: com.project.log.dto.event.LogEventDto
+        spring.json.value.default.type: com.project.log.dto.event.DocEventDto
         spring.json.trusted.packages: "*"
+      auto-offset-reset: earliest
+      group-id: doc-group
 
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.add.type.headers: false
-
-  eureka:
-    client:
-      service-url:
-        defaultZone: http://localhost:8761/eureka
