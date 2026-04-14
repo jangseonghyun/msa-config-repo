@@ -11,3 +11,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://discovery-server:8761/eureka
+
+file:
+  upload-dir: ${UPLOAD_DIR}
