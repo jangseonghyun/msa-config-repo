@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://doc_postgres:5433/doc_postgres
+    url: jdbc:postgresql://doc_postgres:5432/doc_postgres
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
