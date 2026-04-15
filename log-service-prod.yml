@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5434/log_postgres
+    url: jdbc:postgresql://log_postgres:5434/log_postgres
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
