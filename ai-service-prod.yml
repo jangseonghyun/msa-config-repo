@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://ai_postgres:5435/ai_postgres
+    url: jdbc:postgresql://ai_postgres:5432/ai_postgres
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
@@ -11,3 +11,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://discovery-server:8761/eureka
+
+ollama:
+  base-url: http://ollama:11434
+  model: llama3
