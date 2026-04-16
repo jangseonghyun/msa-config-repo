@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://doc_postgres:5432/doc_postgres
-    username: tmd2052
-    password: tmdgus2052
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
   kafka:
     bootstrap-servers: kafka:9092
