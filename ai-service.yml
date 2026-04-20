@@ -17,7 +17,7 @@ spring:
       auto-offset-reset: earliest
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.value.default.type: com.project.log.dto.request.AiRequestDto
+        spring.json.value.default.type: com.project.ai.dto.request.AiRequestDto
         spring.json.trusted.packages: "*"
 
     producer:
