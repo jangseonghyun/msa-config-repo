@@ -14,7 +14,7 @@ spring:
     consumer:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.value.default.type: com.project.log.dto.event.DocEventDto
+        spring.json.value.default.type: com.project.doc.dto.event.DocEventDto
         spring.json.trusted.packages: "*"
       auto-offset-reset: earliest
       group-id: doc-group
